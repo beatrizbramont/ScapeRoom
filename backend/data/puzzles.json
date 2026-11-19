@@ -1,0 +1,141 @@
+
+{
+  "game_info": {
+    "title": "Escape Room de Natal",
+    "subtitle": "A Oficina do Papai Noel",
+    "description": "Uma terrível tempestade de neve trancou a oficina do Papai Noel faltando 30 minutos para a entrega dos presentes!",
+    "version": "1.0.0"
+  },
+  "puzzles": [
+    {
+      "phase": 1,
+      "name": "Mapa Estelar",
+      "description": "Explore a oficina e encontre os 3 objetos escondidos que revelam a senha de 4 dígitos.",
+      "answer": "1225",
+      "hints": [
+        "Procure objetos que o Papai Noel usa na noite de Natal...",
+        "O relógio marca uma hora especial — meia-noite! O número é 12.",
+        "Junte os números: relógio(12), carta(2), cookie(5) → 1225"
+      ],
+      "extra": {
+        "objects": ["relogio", "carta", "cookie", "estrela", "meia", "presente"],
+        "required_objects": ["relogio", "carta", "cookie"],
+        "object_details": {
+          "relogio": {
+            "name": "Relógio",
+            "emoji": "🕛",
+            "value": 12,
+            "is_clue": true,
+            "description": "Um relógio de parede marcando meia-noite"
+          },
+          "carta": {
+            "name": "Carta",
+            "emoji": "✉️",
+            "value": 2,
+            "is_clue": true,
+            "description": "Uma carta rasgada com o número 2 visível"
+          },
+          "cookie": {
+            "name": "Cookie",
+            "emoji": "🍪",
+            "value": 5,
+            "is_clue": true,
+            "description": "Um biscoito com 5 gotas de chocolate"
+          },
+          "estrela": {
+            "name": "Estrela",
+            "emoji": "⭐",
+            "value": null,
+            "is_clue": false,
+            "description": "Estrela decorativa — apenas enfeite"
+          },
+          "meia": {
+            "name": "Meia",
+            "emoji": "🧦",
+            "value": null,
+            "is_clue": false,
+            "description": "Meia pendurada na lareira — decoração"
+          },
+          "presente": {
+            "name": "Presente",
+            "emoji": "🎁",
+            "value": null,
+            "is_clue": false,
+            "description": "Uma caixa de presente embrulhada"
+          }
+        }
+      }
+    },
+    {
+      "phase": 2,
+      "name": "Lista Criptografada",
+      "description": "Os duendes escreveram uma mensagem secreta usando a Cifra de César. Decifre o código!",
+      "answer": "RENA",
+      "hints": [
+        "É uma Cifra de César... cada letra foi deslocada para frente.",
+        "O deslocamento é de 3 posições (A→D, B→E, C→F...).",
+        "R-E-N-A: o animal que puxa o trenó do Papai Noel!"
+      ],
+      "extra": {
+        "encrypted": "UHQD",
+        "cipher_shift": 3,
+        "christmas_symbols": {
+          "U": "🎄",
+          "H": "⛄",
+          "Q": "🔔",
+          "D": "🦌",
+          "R": "🎅",
+          "E": "🎁",
+          "N": "❄️",
+          "A": "⭐"
+        }
+      }
+    },
+    {
+      "phase": 3,
+      "name": "Sequência de Luzes",
+      "description": "Memorize a sequência do pisca-pisca e repita na ordem certa para ligar a energia!",
+      "answer": null,
+      "hints": [
+        "Preste atenção na ordem das cores que acendem!",
+        "São 5 cores na sequência. Tente memorizar as 3 primeiras.",
+        "Respire fundo e observe novamente — você consegue!"
+      ],
+      "extra": {
+        "colors": ["vermelho", "verde", "azul", "amarelo"],
+        "sequence_length": 5,
+        "color_details": {
+          "vermelho": { "hex": "#e74c3c", "glow": "#ff6b6b" },
+          "verde": { "hex": "#27ae60", "glow": "#6bff6b" },
+          "azul": { "hex": "#2980b9", "glow": "#6bb5ff" },
+          "amarelo": { "hex": "#f1c40f", "glow": "#ffe66b" }
+        }
+      }
+    },
+    {
+      "phase": 4,
+      "name": "Peso do Trenó",
+      "description": "Equilibre os sacos de presentes na balança! O trenó precisa de exatamente 100 kg.",
+      "answer": 100.0,
+      "hints": [
+        "O peso alvo do trenó é 100 kg exatos.",
+        "Tente combinar: 25 + 35 + 40 = 100!",
+        "Qualquer combinação que some exatamente 100 kg funciona!"
+      ],
+      "extra": {
+        "available_weights": [5.0, 10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0],
+        "weight_details": {
+          "5.0":  { "emoji": "🎁", "label": "Caixinha de Música" },
+          "10.0": { "emoji": "📦", "label": "Caixa de Brinquedos" },
+          "15.0": { "emoji": "🎀", "label": "Urso de Pelúcia" },
+          "20.0": { "emoji": "🧸", "label": "Kit de Jogos" },
+          "25.0": { "emoji": "🎄", "label": "Árvore Decorativa" },
+          "30.0": { "emoji": "⛄", "label": "Boneco de Neve Gigante" },
+          "35.0": { "emoji": "🦌", "label": "Rena Mecânica" },
+          "40.0": { "emoji": "🛷", "label": "Mini Trenó" }
+        }
+      }
+    }
+  ]
+}
+
